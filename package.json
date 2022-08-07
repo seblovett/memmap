@@ -9,7 +9,7 @@
   "scripts": {
     "test": "eslint lib/*.js && nyc -r=lcov -r=text mocha test",
     "coverage": "nyc report -r=text-lcov | coveralls",
-    "alpha": "node bin/memmap.js --input test/alpha.json --hspace 800 > test/alpha.svg",
+    "examples": "node bin/memmap.js --input test/alpha.json --hspace 800 > test/alpha.svg && node bin/memmap.js --input test/gaps.json --hspace 800 > test/gaps.svg;",
     "browserify": "browserify --standalone memmap lib/index.js > build/memmap.js",
     "prepublish": "npm run test && mkdir -p build && npm run browserify"
   },
@@ -47,7 +47,7 @@
   },
   "keywords": [
     "svg",
-    "bitfield"
+    "memory map"
   ],
   "bugs": {
     "url": "https://github.com/seblovett/memmap/issues"

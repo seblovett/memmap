@@ -61,3 +61,8 @@ Options:
 ### alpha.svg
 
 ![Basic Map](test/alpha.svg)
+
+
+### gaps.svg
+If gaps exist within the map, an "Unallocated" block will be inserted. 
+![Basic Map](test/gaps.svg)
