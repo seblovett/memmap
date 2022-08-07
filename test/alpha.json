@@ -1,0 +1,5 @@
+[
+  { "name": "ROM", "startAddr": "0x0000", "endAddr": "0x0FFF", "type":4 },
+  { "name": "RAM", "startAddr": "0x1000", "endAddr": "0xEFFF", "type":2 },
+  { "name": "Reserved", "startAddr": "0xF000", "endAddr": "0xFFFF", "type":5 }
+]
